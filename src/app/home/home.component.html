@@ -1,5 +1,8 @@
-<div class="container">
- <p>{{stall.housename}}</p>
- <p>{{stall.description}}</p>
- <p>{{stall.location}}</p>
-</div>
+
+<li *ngFor='let stall of stalls '>
+ <div class="test">
+  <p>{{stall.housename}}</p>
+  <p>{{stall.description}}</p>
+  <p>{{stall.location}}</p>
+ </div>
+  	</li>
