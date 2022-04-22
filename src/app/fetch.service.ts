@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class FetchService {
-  apiURL = 'http://127.0.0.1:8000/stalls';
+  apiURL = 'https://houseyourbiz.herokuapp.com/stalls/';
   constructor(public http: HttpClient) { }
   Fetch(): Observable<any> {
     return this.http.get(this.apiURL);
