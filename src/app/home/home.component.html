@@ -7,8 +7,12 @@
 
   <div class="container">
     <div class="landing">
-      <!-- <img src="/assets/images/white-male-1847722_1920-removebg-preview.png" alt=""> -->
-      <!-- <h2><b>Welcome</b></h2> -->
+      <div class="float">
+        <h3>
+          <b>Looking For an Office space ??</b>
+        </h3>
+        <h2><b>Welcome to Houze Your Biz</b></h2>
+      </div>
     </div>
 
     <span class="av" id="listing">
@@ -19,7 +23,9 @@
 
       <div class="col-md-4" *ngFor='let stall of stalls '> 
         <div class="card">
-          <div class="card-header"></div>
+          <div class="card-header">
+            <b>{{stall.housename}} </b>
+          </div>
           <div class="card-body">
             <img src="{{stall.image}}" style="height: 300px;" width="100%" alt="">
             <div class="desc" style="height: 120px;">
@@ -31,7 +37,7 @@
           </div>
           <div class="card-footer">
             <div class="description">
-              {{stall.housename}} {{stall.price}} <button class="btn btn-primary" routerLink="/listing">View</button>
+              <b>{{stall.price}} </b><button class="btn btn-primary" routerLink="/listing">View</button>
             </div>
           </div>
         </div>
