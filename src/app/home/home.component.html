@@ -1,9 +1,54 @@
+<body>
 
-<li *ngFor='let stall of stalls '>
- <div class="test">
-  <img src="{{stall.image}}" alt="kk">
-  <p>{{stall.housename}}</p>
-  <p>{{stall.description}}</p>
-  <p>{{stall.location}}</p>
- </div>
-  	</li>
+  <div class="bg">
+    <img src="" alt="">
+  </div>
+
+
+  <div class="container">
+    <div class="landing">
+      <!-- <img src="/assets/images/white-male-1847722_1920-removebg-preview.png" alt=""> -->
+      <!-- <h2><b>Welcome</b></h2> -->
+    </div>
+
+    <span class="av" id="listing">
+      <h2>AVAILABLE STALLS FOR RENT</h2>
+      <p>Browse a list of featured stalls</p>
+    </span>
+    <div class="row">
+
+      <div class="col-md-4" *ngFor='let stall of stalls '> 
+        <div class="card">
+          <div class="card-header"></div>
+          <div class="card-body">
+            <img src="{{stall.image}}" style="height: 300px;" width="100%" alt="">
+            <div class="desc">
+             <i>{{stall.description}}</i>
+            </div>
+            <div class="location">
+             <b>{{stall.location}}</b>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="description">
+              {{stall.housename}} {{stall.price}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+  </div>
+</body><div class="About">
+      <h1>ABOUT US</h1>
+      <p>Ready to fall in love with your business station? we are a property agent firm mainly dealing with helping
+        clients
+        find stalls within Nairobi at affordable
+        rates. values are founded on a unique recipe for success that has been achieved since the company was
+        founded
+        in 2022. these principles that serve as a guiding compass for the organisation as a whole and a true
+        north
+        for each individual who carries and represents our Properties brand.<br> The practice of these standards
+        has governed who we are and how we conduct our business.</p>
+    </div>

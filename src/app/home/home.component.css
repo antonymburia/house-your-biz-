@@ -1,0 +1,13 @@
+.container{
+ background-image: url('src/assets/images/marble.jpg');
+}
+.landing img{
+ width: 100%;
+ height: 500px;
+}
+.about{
+ text-align: justify;
+}
+.card{
+ margin: 2% 2% 2% 1%;
+}
